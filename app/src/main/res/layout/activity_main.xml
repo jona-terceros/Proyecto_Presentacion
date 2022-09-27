@@ -51,4 +51,13 @@
         app:strokeColor="#FFFFFF"
         app:strokeWidth="5px" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/music_app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="154dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
