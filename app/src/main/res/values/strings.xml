@@ -3,4 +3,12 @@
     <string name="tv_frase">Tus mejores momentos,Escuchando en wiwi</string>
     <string name="button_play">PLAY</string>
     <string name="button_login">Login</string>
+    <string name="tv_salut">Bienvenido a wiwi!</string>
+    <string name="btn_register">Registrate</string>
+    <string name="et_full_name">full name</string>
+    <string name="et_correo_electronico">correo electronico</string>
+    <string name="et_password"></string>
+    <string name="et_password_confirm"></string>
+    <string name="tv_pregunta_cuenta">¿Ya tienes una cuenta?</string>
+
 </resources>

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var name_proyect_app: TextView
+    lateinit var btnCreateAccount: Button
     lateinit var button_home: Button
     var counter = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +16,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button_home = findViewById(R.id.button_home)
+        btnCreateAccount = findViewById(R.id.btnCreateAccount)
         name_proyect_app=findViewById(R.id.name_proyect_app)
 
         button_home.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+        btnCreateAccount.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
     }
