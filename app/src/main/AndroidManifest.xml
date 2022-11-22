@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.proyecto_presentacion_1">
+    package="com.wiwi.proyecto_presentacion_1">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,22 +14,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_Presentacion_1"
         tools:targetApi="31">
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+        <activity android:name="com.wiwi.proyecto_presentacion_1.DeleteAccountActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.UpdatePasswordActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.CheckEmailActivity" />
+        <activity android:name="com.wiwi.proyecto_presentacion_1.AccountRecoveryActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.ProfileActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.RegisterActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.HomeActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.LoginActivity"/>
+        <activity android:name="com.wiwi.proyecto_presentacion_1.MainActivity"
+
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>

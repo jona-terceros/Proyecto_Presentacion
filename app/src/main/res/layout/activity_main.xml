@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chica_v1"
-    tools:context=".LiveDataStringActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/name_proyect_app"
-        android:layout_width="342dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/tv_frase"
         android:textColor="#FFFFFF"
@@ -24,11 +24,11 @@
 
     <Button
         android:id="@+id/button_home"
-        android:layout_width="216dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
         android:layout_marginBottom="184dp"
         android:backgroundTint="#FE922B"
-        android:text="Ingresar sin cuenta"
+        android:text="@string/account_login"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,11 +36,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="216dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
         android:backgroundTint="#00FFFFFF"
-        android:text="Crear una Cuenta"
+        android:text="@string/create_acc"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,9 +55,12 @@
         android:id="@+id/imageView"
         android:layout_width="84dp"
         android:layout_height="20dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/music_app_logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="154dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
